@@ -2,7 +2,7 @@
 
 use std::fmt::Display;
 
-pub(crate) enum Error {
+pub enum Error {
     IO(std::io::Error),
     Toml(toml::de::Error),
     Utf8(std::str::Utf8Error),
